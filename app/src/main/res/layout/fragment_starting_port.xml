@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1.0"
+    tools:context=".ui.starting_port.StartingPortFragment">
+
+    <ImageView
+        android:id="@+id/imageStartingPort"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/boat_bg"
+        android:contentDescription="Boat's image"
+        android:cropToPadding="true"
+        android:padding="32dp"
+        android:scaleType="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/weightAnchorButton"
+        app:srcCompat="@drawable/boat"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageStartingPort"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="WEIGHT ANCHOR"
+        android:textSize="21dp"
+        android:textColor="#1a1aff"
+        android:textAllCaps="true"
+        />
+
+    <Button
+        android:id="@+id/weightAnchorButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:text="WEIGHT ANCHOR"
+        app:iconTint="?android:attr/colorFocusedHighlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:rippleColor="@android:color/black"
+        app:strokeColor="#FF9800" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
